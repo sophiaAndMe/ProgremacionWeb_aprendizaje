@@ -16,11 +16,6 @@ function Posts() {
     const fetchPosts = async () => {
 
         setLoading(true)
-
-
-    }
-
-    useEffect(() => {
         axios.get<Post[]>('https://jsonplaceholder.typicode.com/posts')
             .then(response  => {
                 setPosts(response.data)
@@ -31,6 +26,13 @@ function Posts() {
             .finally(() => {
                 setLoading(false)
             })
+
+    }
+
+    useEffect(() => {
+
+        fetchPosts();
+
     }, [])
 
 

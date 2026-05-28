@@ -3,6 +3,7 @@ import {Route, Routes} from "react-router-dom";
 import Home from "./pages/Home.tsx";
 import About from "./pages/About.tsx";
 import Posts from "./pages/Posts.tsx";
+import Comment from "./pages/Comment.tsx";
 import PostDetalle from "./pages/PostDetalle.tsx"
 ;
 
@@ -21,6 +22,7 @@ function App() {
             <Route path = "/about" element={<About/>} />
             <Route path = "/posts" element={<Posts/>} />
             <Route path={"/posts/:id"} element={<PostDetalle/>}/>
+            <Route path="/post/:id/comments" element={<Comment/>} />
         </Routes>
 
 

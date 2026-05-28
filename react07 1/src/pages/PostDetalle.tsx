@@ -11,7 +11,7 @@ function PostDetalles( ) {
     const {id} = useParams<{id: string}>();
     const url = "https://jsonplaceholder.typicode.com/posts"
     const [post, setPost] = useState<Post>({id: 0, title: "", body: ""});
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
 
     // --- POST
@@ -24,14 +24,15 @@ function PostDetalles( ) {
 
     }
 
-    const handlePut = () =>{
+    /*
+    const handlePut = () => {
         axios.put<Post>(`${url}/${id}`, post)
             .then(res => {
                 setPost(res.data);
             })
             .catch(err => alert(err));
     }
-
+    */
 
     /*
     * IMPORTANTE, si no existe un cambio en ID no cambia la UI
@@ -111,11 +112,13 @@ function PostDetalles( ) {
 
                     <Button
                         variant="contained"
-                        color="primary"
+                        color="secondary"
                         size="large"
-                        onClick={handlePut}
+                        component={Link}
+                        to = {`/post/${post.id}/comments`}
+                        sx = {{margin: "20px auto"}}
                     >
-                        ACTUALIZAR
+                        Ver comentarios
                     </Button>
 
                 </CardActions>
