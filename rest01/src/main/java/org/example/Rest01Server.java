@@ -8,8 +8,10 @@ public class Rest01Server {
 
     public static void main(String[] args) throws InterruptedException {
         SeBootstrap.Configuration config = SeBootstrap.Configuration.builder()
-                .port(0)
-                .protocol("http").build();
+
+                .port(8080)
+                .protocol("http")
+                .build();
 
         SeBootstrap.start(MyApplication.class, config).thenAccept(
                 instance -> {

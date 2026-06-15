@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.glassfish.jaxb:codemodel:4.0.7" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.glassfish.jaxb" artifactId="codemodel" version="4.0.7" baseVersion="4.0.7" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/codemodel/4.0.7/c13bb62fa3c538910617830107a23d6fe13e5ece/codemodel-4.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/codemodel/4.0.7/aad8e972cdc231bf8897325274c1f313eb39ebcb/codemodel-4.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

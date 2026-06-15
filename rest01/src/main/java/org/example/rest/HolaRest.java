@@ -1,4 +1,4 @@
-package org.example;
+package org.example.rest;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Context;
