@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jboss.resteasy:resteasy-cdi:7.0.2.Final" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.jboss.resteasy" artifactId="resteasy-cdi" version="7.0.2.Final" baseVersion="7.0.2.Final" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-cdi/7.0.2.Final/ab3895575ad8f95d1d1527feea2d4193c9482563/resteasy-cdi-7.0.2.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-cdi/7.0.2.Final/dc12192dcc6e835c65557ba21aa4b66bafce9e42/resteasy-cdi-7.0.2.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

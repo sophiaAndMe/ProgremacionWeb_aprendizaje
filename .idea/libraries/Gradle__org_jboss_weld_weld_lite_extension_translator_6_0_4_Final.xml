@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jboss.weld:weld-lite-extension-translator:6.0.4.Final" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.jboss.weld" artifactId="weld-lite-extension-translator" version="6.0.4.Final" baseVersion="6.0.4.Final" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.weld/weld-lite-extension-translator/6.0.4.Final/63a3bdde56e537eecdb749c223d1e22023159c4d/weld-lite-extension-translator-6.0.4.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.weld/weld-lite-extension-translator/6.0.4.Final/1e7c2f3ba301cb99d21d27163f1f2ebeb1164b8c/weld-lite-extension-translator-6.0.4.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

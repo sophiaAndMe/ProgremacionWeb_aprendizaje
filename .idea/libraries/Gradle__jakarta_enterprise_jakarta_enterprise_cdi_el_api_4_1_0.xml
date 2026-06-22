@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: jakarta.enterprise:jakarta.enterprise.cdi-el-api:4.1.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="jakarta.enterprise" artifactId="jakarta.enterprise.cdi-el-api" version="4.1.0" baseVersion="4.1.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.enterprise/jakarta.enterprise.cdi-el-api/4.1.0/e828a0a57b258c9e155a22a8c7ad726e2a675090/jakarta.enterprise.cdi-el-api-4.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.enterprise/jakarta.enterprise.cdi-el-api/4.1.0/ba1defb8c3b171d20f6c3b86e11ffbd3d8d0ad50/jakarta.enterprise.cdi-el-api-4.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

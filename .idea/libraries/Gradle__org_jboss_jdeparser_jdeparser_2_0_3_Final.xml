@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jboss.jdeparser:jdeparser:2.0.3.Final" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.jboss.jdeparser" artifactId="jdeparser" version="2.0.3.Final" baseVersion="2.0.3.Final" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.jdeparser/jdeparser/2.0.3.Final/f1982f9caa0ed8a2663d4c648aaa9a82d14eb962/jdeparser-2.0.3.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.jdeparser/jdeparser/2.0.3.Final/f36e98c8bcc349ee2c4bb9367be22120616bc772/jdeparser-2.0.3.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

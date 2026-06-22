@@ -64,7 +64,6 @@ public class CustomerRest {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
         return Response.ok(customer).header("mi cabecera", "123").build();
-
     }
 
     @POST
@@ -77,6 +76,11 @@ public class CustomerRest {
 
         System.out.println(customer);
     }
+
+    /*
+    * Debemos manejar los diferentes tipos de errores con exceptions
+    *
+     */
 
 
 }

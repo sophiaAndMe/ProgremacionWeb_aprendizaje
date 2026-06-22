@@ -6,7 +6,7 @@ import java.net.URI;
 
 public class Rest01Server {
 
-    public static void main(String[] args) throws InterruptedException {
+     static void main(String[] args) throws InterruptedException {
         SeBootstrap.Configuration config = SeBootstrap.Configuration.builder()
 
                 .port(8080)
@@ -27,5 +27,4 @@ public class Rest01Server {
 
         Thread.currentThread().join();
     }
-
 }

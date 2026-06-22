@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jboss.resteasy:resteasy-undertow-cdi:7.0.2.Final" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.jboss.resteasy" artifactId="resteasy-undertow-cdi" version="7.0.2.Final" baseVersion="7.0.2.Final" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-undertow-cdi/7.0.2.Final/f5504d9b3e0efdce30e8527125b6ca966dc27dac/resteasy-undertow-cdi-7.0.2.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.resteasy/resteasy-undertow-cdi/7.0.2.Final/1c964ff750b7b763d0c66c7a69981424baf44a60/resteasy-undertow-cdi-7.0.2.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -28,6 +28,8 @@ dependencies {
     // Source: https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jaxb-provider
     implementation("org.jboss.resteasy:resteasy-jaxb-provider:7.0.2.Final")
 
+    // Source: https://mvnrepository.com/artifact/org.postgresql/postgresql
+    implementation("org.postgresql:postgresql:42.7.11")
 
 }
 
