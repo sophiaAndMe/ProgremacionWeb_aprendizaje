@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="rest-post:main" external.linked.project.path="$MODULE_DIR$/../../rest-post" external.root.project.path="$MODULE_DIR$/../../rest-post" external.system.id="GRADLE" external.system.module.group="org.example" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_21">
     <output url="file://$MODULE_DIR$/../../rest-post/build/classes/java/main" />
     <exclude-output />
+    <content url="file://$MODULE_DIR$/../../rest-post/build/generated/sources/annotationProcessor/java/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../rest-post/build/generated/sources/annotationProcessor/java/main" isTestSource="false" generated="true" />
+    </content>
     <content url="file://$MODULE_DIR$/../../rest-post/src/main">
       <sourceFolder url="file://$MODULE_DIR$/../../rest-post/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../rest-post/src/main/resources" type="java-resource" />
@@ -14,6 +17,8 @@
     <orderEntry type="library" name="Gradle: org.jboss.resteasy:resteasy-core:7.0.2.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.hibernate.orm:hibernate-core:7.4.1.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.postgresql:postgresql:42.7.11" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.deltaspike.modules:deltaspike-data-module-impl:2.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.deltaspike.modules:deltaspike-data-module-api:2.0.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.projectlombok:lombok:1.18.44" level="project" />
     <orderEntry type="library" name="Gradle: org.jboss.resteasy:resteasy-core-spi:7.0.2.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.jboss.logging:jboss-logging:3.6.3.Final" level="project" />
@@ -40,6 +45,10 @@
     <orderEntry type="library" name="Gradle: com.ibm.async:asyncutil:0.1.0" level="project" />
     <orderEntry type="library" name="Gradle: jakarta.persistence:jakarta.persistence-api:3.2.0" level="project" />
     <orderEntry type="library" name="Gradle: jakarta.transaction:jakarta.transaction-api:2.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.deltaspike.modules:deltaspike-jpa-module-impl:2.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.deltaspike.modules:deltaspike-partial-bean-module-api:2.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.deltaspike.modules:deltaspike-jpa-module-api:2.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.deltaspike.core:deltaspike-core-api:2.0.1" level="project" />
     <orderEntry type="library" name="Gradle: jakarta.json:jakarta.json-api:2.1.3" level="project" />
     <orderEntry type="library" name="Gradle: jakarta.interceptor:jakarta.interceptor-api:2.2.0" level="project" />
     <orderEntry type="library" name="Gradle: jakarta.inject:jakarta.inject-api:2.0.1" level="project" />
@@ -53,6 +62,7 @@
     <orderEntry type="library" name="Gradle: jakarta.el:jakarta.el-api:6.0.1" level="project" />
     <orderEntry type="library" name="Gradle: jakarta.enterprise:jakarta.enterprise.cdi-el-api:4.1.0" level="project" />
     <orderEntry type="library" name="Gradle: jakarta.enterprise:jakarta.enterprise.lang-model:4.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.deltaspike.core:deltaspike-core-impl:2.0.1" level="project" />
     <orderEntry type="library" name="Gradle: io.smallrye.common:smallrye-common-function:2.6.0" level="project" />
     <orderEntry type="library" name="Gradle: io.smallrye.common:smallrye-common-constraint:2.6.0" level="project" />
     <orderEntry type="library" name="Gradle: io.smallrye.common:smallrye-common-annotation:2.6.0" level="project" />
@@ -67,8 +77,11 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.glassfish.jaxb:jaxb-runtime:4.0.7" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: net.bytebuddy:byte-buddy:1.18.8" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.antlr:antlr4-runtime:4.13.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.deltaspike.modules:deltaspike-partial-bean-module-impl:2.0.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jboss.xnio:xnio-nio:3.8.16.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.glassfish.jaxb:jaxb-core:4.0.7" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.deltaspike.modules:deltaspike-proxy-module-impl-asm:2.0.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.deltaspike.modules:deltaspike-proxy-module-api:2.0.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.wildfly.common:wildfly-common:2.0.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.glassfish.jaxb:txw2:4.0.7" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.sun.istack:istack-commons-runtime:4.1.2" level="project" />

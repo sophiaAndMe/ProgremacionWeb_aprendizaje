@@ -1,13 +1,7 @@
 package com.programacion.web.data.dto;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
 @Table(name = "users")
@@ -15,9 +9,12 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
+@Getter @Setter
 public class User {
 
     @Id // Llave primaria
+    @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private Integer id;
 
     @Column
@@ -28,4 +25,5 @@ public class User {
 
     @Column
     private String email;
+    //550 558 9245
 }

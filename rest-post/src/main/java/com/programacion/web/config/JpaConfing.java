@@ -5,14 +5,19 @@ import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.inject.Disposes;
 import jakarta.enterprise.inject.Produces;
+import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
+import jakarta.persistence.PersistenceUnit;
+import org.apache.deltaspike.jpa.api.entitymanager.PersistenceUnitName;
 
 
 @ApplicationScoped
 public class JpaConfing {
 
+    @PersistenceUnit( unitName = "dbposts")
+    @Inject
     private EntityManagerFactory emf;
 
     @PostConstruct

@@ -31,11 +31,27 @@ dependencies {
     implementation("org.hibernate.orm:hibernate-core:${hibernateVersion}")
 
     implementation("org.postgresql:postgresql:${postgresqlVersion}")
+    implementation("org.apache.deltaspike.modules:deltaspike-data-module-api:2.0.1")
+    implementation("org.apache.deltaspike.modules:deltaspike-data-module-impl:2.0.1")
 
-    
 
+
+
+}
+
+tasks.withType<JavaCompile> {
+    options.release.set(21)
+}
+
+sourceSets {
+    main {
+        output.setResourcesDir(
+            file("${buildDir}/classes/java/main")
+        )
+    }
 }
 
 tasks.test {
     useJUnitPlatform()
+
 }
