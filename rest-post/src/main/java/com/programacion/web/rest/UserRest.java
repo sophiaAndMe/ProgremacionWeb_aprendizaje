@@ -1,14 +1,12 @@
 package com.programacion.web.rest;
 
 import com.programacion.web.data.dto.User;
-import com.programacion.web.repositorios.UserRepository;
+import com.programacion.web.servicios.impl.UserServiceImpl;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-import lombok.RequiredArgsConstructor;
 
-import java.awt.*;
 import java.util.List;
 
 @Path("users")
@@ -16,22 +14,22 @@ import java.util.List;
 @Consumes(MediaType.APPLICATION_JSON)
 public class UserRest {
 
-    final UserRepository userRepository;
+    final UserServiceImpl userServiceImpl;
 
     @Inject
-    public UserRest(UserRepository userRepository){
-        this.userRepository = userRepository;
+    public UserRest(UserServiceImpl userServiceImpl){
+        this.userServiceImpl = userServiceImpl;
     }
 
     @GET
     public List<User> findAll() {
-        return userRepository.findAll();
+        return userServiceImpl.findAll();
     }
 
     @GET
     @Path("/{id}")
     public Response findById(@PathParam("id") Integer id){
-        return userRepository.findOptionalBy(id)
+        return userServiceImpl.findById(id)
                 .map(Response::ok)
                 .orElse(Response.status(Response.Status.NOT_FOUND))
                 .build();
@@ -41,19 +39,17 @@ public class UserRest {
     @PUT
     @PathParam("/{id}")
     public void update(@PathParam("id") Integer id, User user) {
-        userRepository.findOptionalBy(id)
+        userServiceImpl.findById(id)
                 .ifPresent(existingUser ->
-                        userRepository.save(user));
+                        userServiceImpl.save(user));
     }
 
 
     @DELETE
     @PathParam("/{id}")
     public void delete(@PathParam("id") Integer id) {
-
-
-        userRepository.findOptionalBy(id)
-                .ifPresent(userRepository::remove);
+        userServiceImpl.findById(id)
+                .ifPresent(userServiceImpl::remove);
     }
 
 }
