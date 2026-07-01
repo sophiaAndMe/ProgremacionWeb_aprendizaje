@@ -17,7 +17,7 @@ public class UserRest {
     final UserServiceImpl userServiceImpl;
 
     @Inject
-    public UserRest(UserServiceImpl userServiceImpl){
+    public UserRest(UserServiceImpl userServiceImpl) {
         this.userServiceImpl = userServiceImpl;
     }
 
@@ -28,7 +28,7 @@ public class UserRest {
 
     @GET
     @Path("/{id}")
-    public Response findById(@PathParam("id") Integer id){
+    public Response findById(@PathParam("id") Integer id) {
         return userServiceImpl.findById(id)
                 .map(Response::ok)
                 .orElse(Response.status(Response.Status.NOT_FOUND))
@@ -37,7 +37,7 @@ public class UserRest {
     }
 
     @PUT
-    @PathParam("/{id}")
+    @Path("/{id}")
     public void update(@PathParam("id") Integer id, User user) {
         userServiceImpl.findById(id)
                 .ifPresent(existingUser ->
@@ -45,8 +45,15 @@ public class UserRest {
     }
 
 
+    @POST
+    public User agregar(User user) {
+        user.setId(null);
+        return userServiceImpl.save(user);
+    }
+
+
     @DELETE
-    @PathParam("/{id}")
+    @Path("/{id}")
     public void delete(@PathParam("id") Integer id) {
         userServiceImpl.findById(id)
                 .ifPresent(userServiceImpl::remove);

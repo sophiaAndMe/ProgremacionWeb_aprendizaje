@@ -1,12 +1,14 @@
 package com.programacion.web.data.dto;
 
+import jakarta.json.bind.annotation.JsonbTransient;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
-@Data
+@Getter @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "comments")
@@ -17,9 +19,11 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @ManyToOne(optional = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "post_id", nullable = false,
             foreignKey = @ForeignKey(name = "comments_post_id_fkey"))
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonbTransient // <--- ESTO EVITA EL ERROR DE SERIALIZACIÓN DEL PROXY
     private Post post;
 
     @Column(name = "name")
